@@ -61,11 +61,8 @@
             color: #fff;
         }
 
-        body {
-            background-image: url("https://img.freepik.com/free-photo/top-view-calculator-notebook-frame_23-2149103980.jpg");
-            background-position: center;
-            background-size: cover;
-        }
+
+        
 
         .number {
             background-color: #fff;
@@ -94,25 +91,12 @@
     </style>
     <!-- script  -->
     <script>
-        function numberTyped(passnumber) {
-            console.log("clearText is logged")
-            document.getElementById("display").innerHTML = passnumber;
+        function numberTyped(pass) {
+            document.getElementById("display").innerHTML = pass
         }
-
-        function clearText(){
-            console.log("clearText is logged")
-            document.getElementById("display").innerHTML = "10+20";
-            console.log("working one")
-            document.getElementById("display").innerHTMLllll = "20+30";
-            console.log("working two")
-            document.getElementById("display").innerHTML = "clear";
-        }
+      
 
 
-        function thirdOutput(){
-            //OUTPUT three
-           alert("YOU TYPED AN EVEN NUMBER")
-        }
     </script>
 </head>
 
@@ -124,6 +108,7 @@
                 <div style="background-color: rgb(124, 124, 124); 
                 height: 10vw; 
                 width: 40vw;">
+                    <input type="text" id="input">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-apple" viewBox="0 0 16 16">
                         <path
@@ -150,14 +135,14 @@
                 <div><button onclick="numberTyped(6)" class="number">6</button></div>
                 <div><button onclick="minus()" class="operator">-</button></div>
                 <div><button onclick="numberTyped(1)" class="number">1</button></div>
-                <div><button onclick="alert(2)" class="number">2</button></div>
+                <div><button onclick="numberTyped(2)" class="number">2</button></div>
                 <div><button onclick="numberTyped(3)" class="number">3</button></div>
                 <div><button onclick="add()" class="operator">+</button></div>
             </div>
             <div class="last-row">
                 <div><button onclick="numberTyped(0)" class="number">0</button></div>
                 <div><button onclick="numberTyped(0)" class="number">00</button></div>
-                <div><button class="operator" onclick=" showresult()">=</button></div>
+                t<div><button class="operator" onclick=" showresult()">=</button></div>
             </div>
         </div>
 
